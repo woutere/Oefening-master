@@ -10,6 +10,14 @@ namespace Oefening.Controllers
 {
     public class HelloWorldController : Controller
     {
-        
+        public string Index()
+        {
+            return "Dit is de 'Index' Action Method";
+        }
+
+        public string Welkom()
+        {
+            return "Dit is de 'Welkom' Action Method";
+        }
     }
 }
