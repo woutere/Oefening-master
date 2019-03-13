@@ -56,7 +56,7 @@ namespace Oefening
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller}/{action}");
+                    template: "{controller}/{action=Index}");
             });
         }
     }
