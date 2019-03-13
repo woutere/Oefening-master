@@ -12,5 +12,13 @@ namespace Oefening.Controllers
         {
             return View();
         }
+
+        public IActionResult Hallo(string naam, int aantal = 1)
+        {
+            ViewData["Message"] = "Hallo " + naam;
+            ViewData["Aantal"] = aantal;
+
+            return View();
+        }
     }
 }
