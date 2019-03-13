@@ -1,0 +1,20 @@
+﻿
+@model List<Oefening.Models.Klant>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Klanten";
+}
+
+<h2>Klanten</h2>
+
+<ul>
+    @foreach (var klant in Model)
+    {
+    <li>
+        @Html.DisplayFor(modelItem => klant.Voornaam)
+        @Html.DisplayFor(modelItem => klant.Naam)
+        @Html.DisplayFor(modelItem => klant.AangemaaktDatum)
+    </li>
+    }
+</ul>
+
