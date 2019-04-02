@@ -32,10 +32,10 @@ namespace Oefening
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
 
-                services.AddDbContext<HelloCoreContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("HelloCoreConnection")));
+                
             });
-
+            services.AddDbContext<HelloCoreContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("HelloCoreConnection")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
