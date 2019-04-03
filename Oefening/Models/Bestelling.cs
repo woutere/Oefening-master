@@ -10,7 +10,7 @@ namespace Oefening.Models
     {
         public int BestellingID { get; set; }
         public string Artikel { get; set; }
-        public Decimal Prijs { get; set; }
+        public Decimal? Prijs { get; set; }
         public int KlantID { get; set; }
         public Klant Klant { get; set; }
     }

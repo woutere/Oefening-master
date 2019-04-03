@@ -9,6 +9,7 @@ namespace Oefening.Models
     public class Klant
     {
         public int ID { get; set; }
+        [Required]
         public string Naam { get; set; }
         public string Voornaam { get; set; }
 
